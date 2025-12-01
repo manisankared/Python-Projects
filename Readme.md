@@ -1,118 +1,115 @@
-Invisibility Cloak using Python and OpenCV
+Python Projects – Collection of 20 Mini Applications
 
-This project implements a real-time invisibility cloak effect using Python and OpenCV.
-The program identifies a specific cloak color and replaces it with the saved background, creating the illusion that the person is invisible.
+A curated collection of 20 Python projects covering automation, AI, web apps, utilities, API usage, GUI applications, and real-time systems. Each project is in its own folder with code, README, and required files. Suitable for portfolio, learning, interviews, and GitHub showcase.
 
-Overview
+📁 Project List
+No	Project Name
+01	Cafe Order Manager
+02	PredictAI (ML Prediction Tool)
+03	Typing Speed Tester
+04	PDF Merger
+05	Time-Traveling Journal
+06	Instagram Reel Downloader
+07	Password Strength Checker
+08	Fact Generator
+09	Internet Speed Tester
+10	Noise Detection System
+11	To-Do List App
+12	Currency Converter
+13	Desktop Reminder App
+14	Email Validator
+15	Snake Water Gun Game
+16	Insta Poll Voter
+17	Love Calculator
+18	Invisible Cloak (OpenCV)
+19	YouTube Playlist Downloader
+20	Driver SleepAlert (Drowsiness Detection AI)
+🚀 What This Repository Covers
 
-The invisibility cloak effect works by capturing the background first, then removing all pixels matching a chosen color (green in this project).
-The removed region is filled with the previously captured background, which creates a seamless transparency effect during live video feed.
+✔ Automation Scripts & Utilities
+✔ API integration projects
+✔ Real-time OpenCV computer vision apps
+✔ GUI apps (Tkinter / Flask)
+✔ AI/ML model usage
+✔ Data visualization
+✔ Fun Python mini games
+✔ Beginner to intermediate interview-friendly apps
 
-This project demonstrates concepts in:
-
-Color detection using HSV
-
-Masking and image segmentation
-
-Real-time video processing
-
-Background modeling
-
-Efficient frame blending
-
-Features
-
-Real-time cloak removal
-
-Accurate green mask segmentation
-
-Smooth background restoration
-
-Low-latency processing
-
-Uses an optimized background averaging method
-
-Works on any webcam with no extra hardware
-
-Clean and readable code structure
-
-How It Works
-
-Background Capture
-The system captures multiple empty frames and builds a stable background using a weighted average.
-
-Color Detection
-The video frame is converted to HSV space.
-A specific green range is used to detect the cloak.
-
-Mask Refinement
-Morphological filters clean up noise and small errors.
-
-Region Replacement
-All green regions are replaced with the captured background.
-
-Final Output
-The result appears as if the cloak has disappeared.
-
-Color Range Used (Green)
-Lower: [40, 50, 70]
-Upper: [90, 255, 255]
-
-
-These values give high stability and avoid triggering on skin or room objects.
-
-Installation
-
-Install Python 3.8+ and then install the required packages:
-
-pip install opencv-python numpy
-
-Usage
-
-Run the script:
-
-python green_cloak.py
-
-
-Controls:
-
-Press b: Capture background
-
-Press q: Quit
-
-Folder Structure
-Invisibility-Cloak/
-│
-├── src/
-│   └── green_cloak.py
-│
-├── demo/
-│   └── demo.mp4
-│
-└── README.md
-
-Demo Video
-
-You can view the demo in the demo folder:
-
-demo/demo.mp4
-
-Why Green Cloth?
-
-Green produces the highest contrast against human skin and typical room environments.
-It gives cleaner masks, less flicker, and smoother edges compared to red or blue.
-
-Requirements
+🔧 Tech Stack Used
 
 Python
 
-OpenCV
+OpenCV, Mediapipe
 
-Webcam
+TensorFlow / Keras
 
-A green-colored cloth
+Flask
 
-Author
+Tkinter
 
-Manisankar
-AI and Data Science Engineer
+Requests, BeautifulSoup
+
+matplotlib, numpy, pandas
+
+pytube, speedtest-cli, smtplib
+
+📦 Setup & Installation
+
+Open any project folder, install required libraries (usually requirements.txt provided):
+
+pip install -r requirements.txt
+
+
+or install manually:
+
+pip install opencv-python tensorflow flask mediapipe speedtest-cli pytube numpy
+
+
+Then run:
+
+python main.py
+
+🌟 Featured Projects
+🛑 Driver SleepAlert – AI Drowsiness Detection
+
+Real-time eye and yawn detection using CNN models with webcam monitoring and alert alarm.
+
+🧥 Invisible Cloak (Harry Potter Effect)
+
+Computer vision project using color masking and background subtraction to make objects invisible.
+
+📊 PredictAI
+
+Simple ML prediction tool using sklearn for regression/classification tasks.
+
+📁 PDF Merger
+
+Merge multiple PDFs with a single click using PyPDF2.
+
+🎥 YouTube Playlist Downloader
+
+Fetch and download entire playlists using pytube with GUI/CLI.
+
+⭐ Best Practices Used
+
+✔ Folder-based project structure
+✔ Each project has its own files
+✔ Pythonic coding conventions
+✔ Proper use of modules and imports
+✔ Clean logic and readability
+
+📌 How to Use These Projects
+
+✔ Practice coding
+✔ Build interview portfolio
+✔ Add to resume or portfolio websites
+✔ Convert into real web apps
+✔ Showcase on LinkedIn/GitHub
+
+🤝 Contributing
+
+Feel free to fork and improve these projects — add features, UI, APIs, ML models, or convert CLI apps to GUI.
+
+📬 Connect With Me
+
+GitHub: @manisankared
